@@ -1,0 +1,215 @@
+.ff {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dn {
+    display: none;
+}
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+     background-color: rgba(0, 0, 0, 0.018); 
+   
+}
+
+.container {
+    display: flex;
+    place-content: center;
+    width: 100%;
+
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*      Nav     */
+nav {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 2rem;
+}
+
+h1 {
+    color: white;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    padding-inline: 2rem;
+    padding-block: .5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    transition: .3s;
+    padding-inline: 2rem;
+    padding-block: .5rem;
+    border-radius: 5px;
+}
+
+.list-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.mobil-menu-icon {
+    position: relative;
+    align-self: center;
+    margin-bottom: .8rem;
+}
+
+.fa-solid {
+    position: absolute;
+    scale: 2;
+}
+
+/*social*/
+
+.socials {
+    display: grid;
+    align-items: center;
+}
+
+.social-wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-wrapper i {
+    scale: 1.5;
+}
+
+.fa-brands {
+    cursor: pointer;
+}
+
+.fa-square-x-twitter:hover,
+.fa-linkedin:hover {
+    background: blue;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.fa-youtube:hover {
+    background-color: red;
+    border-radius: .1rem;
+    transition: .3s;
+}
+
+
+
+.social-hr {
+    margin-right: .2rem;
+}
+
+/*       main    */
+main {
+    display: flex;
+    margin-block: 4rem;
+    place-content: center;
+}
+
+.main-wrapper {
+    width: 70%;
+    display: flex;
+    place-content: center;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+.profile-img {
+    display: grid;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+}
+
+.profile-img img {
+    width: 100%;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.727);
+    padding: 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile-explane {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    gap: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 21px;
+    padding: 2rem;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.089);
+}
+
+.e-1 {
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-family: "Kanit", sans-serif;
+}
+
+.e-2 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-family: "Kanit", sans-serif;
+    opacity: .8;
+}
+
+.e-3 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-family: "Kanit", sans-serif;
+    opacity: .6;
+}
+
+/*  pages */
+
