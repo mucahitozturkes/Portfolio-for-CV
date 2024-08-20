@@ -75,12 +75,11 @@ a {
 }
 
 nav ul li a:hover {
-    background-color: white;
-    color: black;
-    transition: .3s;
+    border-radius: 5px;
     padding-inline: 2rem;
     padding-block: .5rem;
-    border-radius: 5px;
+    background: linear-gradient(to bottom, black 40%, white 100%);
+    transition: .3s;
 }
 
 .list-menu {
@@ -106,7 +105,7 @@ nav ul li a:hover {
 .socials {
     display: grid;
     align-items: center;
-    
+
 }
 
 .social-wrapper {
@@ -131,7 +130,7 @@ nav ul li a:hover {
 
 .fa-youtube:hover {
     background-color: red;
-    border-radius: .1rem;
+    border-radius: 3px;
     transition: .3s;
 }
 
