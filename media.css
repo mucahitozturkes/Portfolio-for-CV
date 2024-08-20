@@ -67,6 +67,24 @@
         display: flex;
         gap: 3rem;
     }
+    .about-page {
+        width: 100%;
+        
+        place-content: center;
+    }
+
+    .about-page-wrapper {
+        
+        place-self: center;
+       width: 100%;
+    }
+    .left-menu {
+        width: 100%;
+    }
+
+    .right-menu {
+        width: 100%;
+    }
 
 
 }

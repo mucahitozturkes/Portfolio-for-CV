@@ -75,7 +75,7 @@ xmark.addEventListener("click", function () {
 
 });
 
-/*profile image*/
+/* profile image */
 image.addEventListener("click", function () {
     profile.classList.toggle("dn")
 });

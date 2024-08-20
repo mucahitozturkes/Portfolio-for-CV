@@ -134,14 +134,12 @@ nav ul li a:hover {
     transition: .3s;
 }
 
-
-
 .social-hr {
     margin-right: .2rem;
 }
 
-/*       main    */
-main {
+/*       home    */
+.home-page {
     display: flex;
     margin-block: 4rem;
     place-content: center;
@@ -160,9 +158,8 @@ main {
 .profile-img {
     display: grid;
     border-radius: 20px;
-
     cursor: pointer;
-
+    filter: contrast(1.4)
 }
 
 .profile-img img {
@@ -209,4 +206,63 @@ h3 {
     font-size: clamp(1rem, 2vw, 1.5rem);
     font-family: "Kanit", sans-serif;
     opacity: .6;
+}
+
+/* about page */
+
+.about-page {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.about-page-wrapper {
+    width: 80%;
+    display: flex;
+    place-items: center;
+}
+
+/* left menu */
+
+.ff-cha {
+    font-family: "Changa", sans-serif;
+}
+
+.left-menu {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-profile-image {
+  
+}
+
+.about-info {
+    font-size: 1.2rem;
+}
+
+.about-profile-image img {
+    width: 200px;
+    border-radius: 1rem;
+    filter: contrast(1.4)
+}
+
+/* right menu */
+.right-menu {
+    width: 70%;
+    display: block;
+    gap: 2rem;
+}
+
+.a-info-1 {
+    font-size: clamp(1rem, 4vw, 2.5rem);
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    height: 300px;
 }
