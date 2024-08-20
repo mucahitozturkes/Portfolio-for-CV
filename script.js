@@ -1,3 +1,5 @@
+/* body */
+const tapGesture = document.querySelector(".lm-tap-gesture")
 /* nav bar */
 const xmark = document.querySelector(".fa-xmark");
 const bars = document.querySelector(".fa-bars");
@@ -15,6 +17,16 @@ const homePage = document.querySelector(".home-page")
 const aboutPage = document.querySelector(".about-page")
 const portfolioPage = document.querySelector(".portfolio-page")
 const contactPage = document.querySelector(".contact-page")
+
+/* tapGesture */
+tapGesture.addEventListener('click', function () {
+    menu.classList.toggle("dg")
+
+    bars.classList.remove("hidden")
+    xmark.classList.add("hidden")
+    tapGesture.classList.add("dn")
+
+});
 
 /* single page */
 home.addEventListener("click", function () {
@@ -49,6 +61,8 @@ bars.addEventListener("click", function () {
 
     bars.classList.add("hidden")
     xmark.classList.remove("hidden")
+    tapGesture.classList.remove("dn")
+
 
 });
 
@@ -57,6 +71,8 @@ xmark.addEventListener("click", function () {
 
     bars.classList.remove("hidden")
     xmark.classList.add("hidden")
+    tapGesture.classList.add("dn")
+
 });
 
 /*profile image*/
