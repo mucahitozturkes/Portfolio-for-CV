@@ -53,6 +53,7 @@
     .main-wrapper {
         display: flex;
         flex-direction: column;
+       
     }
 
     .social-hr {
@@ -73,7 +74,7 @@
 
     .about-page {
         width: 100%;
-        margin-top: -5rem;
+        margin-top: -13rem;
     }
 
     .about-page-wrapper {
