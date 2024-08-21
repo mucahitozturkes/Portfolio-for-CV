@@ -84,8 +84,9 @@ nav ul li a:hover {
     border-radius: 5px;
     padding-inline: 2rem;
     padding-block: .5rem;
-    background: linear-gradient(to bottom, black 40%, white 100%);
+    background-color: white;
     transition: .3s;
+    color: black;
 }
 
 .list-menu {
@@ -98,6 +99,7 @@ nav ul li a:hover {
     position: relative;
     align-self: center;
     margin-bottom: .8rem;
+    cursor: pointer;
 }
 
 .fa-solid {
@@ -273,6 +275,7 @@ h3 {
 }
 
 .a-info-1 {
+    font-weight: 200;
     font-size: clamp(1rem, 4vw, 2rem);
 }
 

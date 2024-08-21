@@ -48,6 +48,7 @@
 
     .mobil-menu-icon {
         display: block;
+        margin-right: 1rem;
     }
 
     .home-page {
@@ -91,14 +92,41 @@
 
     .left-menu {
         width: 100%;
-        margin-top: unset; 
+        margin-top: unset;
     }
 
     .right-menu {
         width: 100%;
     }
 
-    footer {}
+    /* portfolio */
+    .ff-na {
+        font-family: "New Amsterdam", sans-serif;
+    }
+    .cd-container {
+        display: flex;
+        flex-direction: column;
+        gap: 9rem;
+        margin: 2rem;
+    }
+
+    .gap-set {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .codes {
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .fa-html5,
+    .fa-css3-alt,
+    .fa-js,
+    .fa-swift {
+      scale: 10;
+    }
 
 }
 
