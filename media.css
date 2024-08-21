@@ -50,10 +50,14 @@
         display: block;
     }
 
+    .home-page {
+        margin-bottom: 8rem;
+    }
+
     .main-wrapper {
         display: flex;
         flex-direction: column;
-       
+
     }
 
     .social-hr {
@@ -74,7 +78,7 @@
 
     .about-page {
         width: 100%;
-        margin-top: -13rem;
+        margin-top: -6rem;
     }
 
     .about-page-wrapper {
@@ -86,13 +90,14 @@
 
     .left-menu {
         width: 100%;
-        
+
     }
 
     .right-menu {
         width: 100%;
     }
 
+    footer {}
 
 }
 

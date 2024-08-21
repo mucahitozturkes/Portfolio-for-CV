@@ -152,18 +152,18 @@ button {
 /*       home    */
 .home-page {
     display: flex;
-    margin-block: 4rem;
+   margin-block: 4rem;
     place-content: center;
 }
 
 .main-wrapper {
-    width: 70%;
+    width: 80%;
     display: flex;
     place-content: center;
     align-items: start;
     justify-content: space-between;
     gap: 2rem;
-    margin-bottom: 2rem;
+   
 }
 
 
@@ -226,7 +226,7 @@ h3 {
     width: 100%;
     display: flex;
     place-content: center;
-    margin-top: -6rem;
+   /*  margin-top: -6rem; */
 }
 
 .about-page-wrapper {
@@ -252,7 +252,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 9rem;
+    /* margin-top: 9rem; */
 }
 
 .about-info {
@@ -281,5 +281,5 @@ h3 {
 footer {
     background-color: black;
     height: 300px;
-    margin-top: 2rem;
+   /*  margin-top: 2rem; */
 }
