@@ -1,4 +1,4 @@
-@media(max-width: 870px) {
+@media(max-width: 1024px) {
     .hidden {
         width: 0;
         height: 0;
@@ -79,6 +79,7 @@
     .about-page {
         width: 100%;
         margin-top: -6rem;
+        margin-bottom: 1rem;
     }
 
     .about-page-wrapper {
@@ -90,7 +91,7 @@
 
     .left-menu {
         width: 100%;
-
+        margin-top: unset; 
     }
 
     .right-menu {

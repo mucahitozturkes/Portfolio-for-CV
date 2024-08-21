@@ -26,7 +26,7 @@ transform: rotate(260deg);
     }
 }
 /*show my name*/
-@media (max-width: 870px) {
+@media (max-width: 1024px) {
     .showInfo {
     animation:  autoPopAnimation;
     animation-timeline: view();
