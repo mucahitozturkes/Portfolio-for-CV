@@ -1,101 +1,35 @@
-
-/* body */
-const tapGesture = document.querySelector(".lm-tap-gesture")
-/* nav bar */
+const tapGesture = document.querySelector(".lm-tap-gesture");
 const xmark = document.querySelector(".fa-xmark");
 const bars = document.querySelector(".fa-bars");
 const menu = document.querySelector(".list-menu");
-/* image click */
-const image = document.querySelector(".profile-img img")
-const profile = document.querySelector("h3");
-/* single page */
-const home = document.querySelector(".home")
-const about = document.querySelector(".about")
-const portfolio = document.querySelector(".portfolio")
-const contact = document.querySelector(".contact")
+const pages = {
+  home: document.querySelector(".home-page"),
+  about: document.querySelector(".about-page"),
+  portfolio: document.querySelector(".portfolio-page"),
+  contact: document.querySelector(".contact-page")
+};
 
-const homePage = document.querySelector(".home-page")
-const aboutPage = document.querySelector(".about-page")
-const portfolioPage = document.querySelector(".portfolio-page")
-const contactPage = document.querySelector(".contact-page")
+function toggleMenu() {
+  menu.classList.toggle("dg");
+  bars.classList.toggle("hidden");
+  xmark.classList.toggle("hidden");
+  tapGesture.classList.toggle("dn");
+}
 
-/* tapGesture */
-tapGesture.addEventListener('click', function () {
-    menu.classList.toggle("dg")
+function showPage(page) {
+  Object.values(pages).forEach(p => p.classList.add("hidden"));
+  pages[page].classList.remove("hidden");
+  toggleMenu();
+}
 
-    bars.classList.remove("hidden")
-    xmark.classList.add("hidden")
-    tapGesture.classList.add("dn")
+tapGesture.addEventListener('click', toggleMenu);
+bars.addEventListener("click", toggleMenu);
+xmark.addEventListener("click", toggleMenu);
+
+document.querySelector(".profile-img img").addEventListener("click", () => {
+  document.querySelector("h3").classList.toggle("dn");
 });
 
-/* single page */
-home.addEventListener("click", function () {
-    homePage.classList.remove("hidden")
-    aboutPage.classList.add("hidden")
-    portfolioPage.classList.add("hidden")
-    contactPage.classList.add("hidden")
-
-    tapGesture.classList.add("dn")
-    bars.classList.remove("hidden")
-    xmark.classList.add("hidden")
-    menu.classList.toggle("dg")
-})
-about.addEventListener("click", function () {
-    aboutPage.classList.remove("hidden")
-    homePage.classList.add("hidden")
-    portfolioPage.classList.add("hidden")
-    contactPage.classList.add("hidden")
-
-    tapGesture.classList.add("dn")
-    bars.classList.remove("hidden")
-    xmark.classList.add("hidden")
-    menu.classList.toggle("dg")
-})
-portfolio.addEventListener("click", function () {
-    portfolioPage.classList.remove("hidden")
-    homePage.classList.add("hidden")
-    aboutPage.classList.add("hidden")
-    contactPage.classList.add("hidden")
-
-    tapGesture.classList.add("dn")
-    bars.classList.remove("hidden")
-    xmark.classList.add("hidden")
-    menu.classList.toggle("dg")
-
-})
-contact.addEventListener("click", function () {
-    contactPage.classList.remove("hidden")
-    homePage.classList.add("hidden")
-    aboutPage.classList.add("hidden")
-    portfolioPage.classList.add("hidden")
-
-    tapGesture.classList.add("dn")
-    bars.classList.remove("hidden")
-    xmark.classList.add("hidden")
-    menu.classList.toggle("dg")
-})
-
-/* nav bar */
-bars.addEventListener("click", function () {
-    menu.classList.toggle("dg")
-
-    bars.classList.add("hidden")
-    xmark.classList.remove("hidden")
-    tapGesture.classList.remove("dn")
-
-
-});
-
-xmark.addEventListener("click", function () {
-    menu.classList.toggle("dg")
-
-    bars.classList.remove("hidden")
-    xmark.classList.add("hidden")
-    tapGesture.classList.add("dn")
-
-});
-
-/*profile image*/
-image.addEventListener("click", function () {
-    profile.classList.toggle("dn")
+["home", "about", "portfolio", "contact"].forEach(page => {
+  document.querySelector(`.${page}`).addEventListener("click", () => showPage(page));
 });

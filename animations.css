@@ -1,4 +1,4 @@
-.autoShow {
+ .autoShow {
     animation: autoShowAnimation both;
     animation-timeline: view(70% 5%);
 }
@@ -25,7 +25,7 @@ transform: rotate(0deg);
 transform: rotate(260deg);
     }
 }
-/*show my name*/
+/*show name*/
 @media (max-width: 1024px) {
     .showInfo {
     animation:  autoPopAnimation;
@@ -40,3 +40,4 @@ transform: rotate(260deg);
     }
 }
 }
+ 
