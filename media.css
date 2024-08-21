@@ -25,20 +25,23 @@
     }
 
     .lm-tap-gesture {
-        
-        opacity: .1;
-        position: absolute;
+        background-color: rgba(73, 72, 72, 0.233);
+        position: fixed;
         width: 100%;
         height: 100%;
+        filter: blur(10px);
         z-index: 100;
+        left: 0;
+        top: 0;
     }
+
 
     nav ul {
         padding-right: 2rem;
         display: grid;
     }
 
-    nav li a{
+    nav li a {
         display: block;
         gap: 4rem;
     }
@@ -52,7 +55,6 @@
         flex-direction: column;
     }
 
-
     .social-hr {
         width: 100%;
     }
@@ -63,23 +65,27 @@
         padding-bottom: 1rem;
         margin-right: unset;
     }
+
     .social-wrapper {
         display: flex;
         gap: 3rem;
     }
+
     .about-page {
         width: 100%;
-        
-        place-content: center;
+        margin-top: -5rem;
     }
 
     .about-page-wrapper {
-        
-        place-self: center;
-       width: 100%;
+        display: grid;
+        place-content: center;
+        width: 100%;
+        margin-inline: 2rem;
     }
+
     .left-menu {
         width: 100%;
+        
     }
 
     .right-menu {
@@ -93,6 +99,7 @@
     .title {
         font-size: .9rem;
     }
+
     .list-menu {
         background-color: black;
         position: absolute;

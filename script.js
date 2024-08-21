@@ -25,34 +25,53 @@ tapGesture.addEventListener('click', function () {
     bars.classList.remove("hidden")
     xmark.classList.add("hidden")
     tapGesture.classList.add("dn")
-
 });
 
 /* single page */
 home.addEventListener("click", function () {
-    homePage.classList.remove("dn")
-    aboutPage.classList.add("dn")
-    portfolioPage.classList.add("dn")
-    contactPage.classList.add("dn")
+    homePage.classList.remove("hidden")
+    aboutPage.classList.add("hidden")
+    portfolioPage.classList.add("hidden")
+    contactPage.classList.add("hidden")
+
+    tapGesture.classList.add("dn")
+    bars.classList.remove("hidden")
+    xmark.classList.add("hidden")
+    menu.classList.toggle("dg")
 })
 about.addEventListener("click", function () {
-    aboutPage.classList.remove("dn")
-    homePage.classList.add("dn")
-    portfolioPage.classList.add("dn")
-    contactPage.classList.add("dn")
+    aboutPage.classList.remove("hidden")
+    homePage.classList.add("hidden")
+    portfolioPage.classList.add("hidden")
+    contactPage.classList.add("hidden")
+
+    tapGesture.classList.add("dn")
+    bars.classList.remove("hidden")
+    xmark.classList.add("hidden")
+    menu.classList.toggle("dg")
 })
 portfolio.addEventListener("click", function () {
-    portfolioPage.classList.remove("dn")
-    homePage.classList.add("dn")
-    aboutPage.classList.add("dn")
-    contactPage.classList.add("dn")
+    portfolioPage.classList.remove("hidden")
+    homePage.classList.add("hidden")
+    aboutPage.classList.add("hidden")
+    contactPage.classList.add("hidden")
+
+    tapGesture.classList.add("dn")
+    bars.classList.remove("hidden")
+    xmark.classList.add("hidden")
+    menu.classList.toggle("dg")
 
 })
 contact.addEventListener("click", function () {
-    contactPage.classList.remove("dn")
-    homePage.classList.add("dn")
-    aboutPage.classList.add("dn")
-    portfolioPage.classList.add("dn")
+    contactPage.classList.remove("hidden")
+    homePage.classList.add("hidden")
+    aboutPage.classList.add("hidden")
+    portfolioPage.classList.add("hidden")
+
+    tapGesture.classList.add("dn")
+    bars.classList.remove("hidden")
+    xmark.classList.add("hidden")
+    menu.classList.toggle("dg")
 })
 
 /* nav bar */
@@ -75,7 +94,7 @@ xmark.addEventListener("click", function () {
 
 });
 
-/* profile image */
+/*profile image*/
 image.addEventListener("click", function () {
     profile.classList.toggle("dn")
 });

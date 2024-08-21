@@ -5,6 +5,12 @@
 .dn {
     display: none;
 }
+ .hidden {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        transition: .6s;
+    }
 
 
 body {
@@ -138,6 +144,11 @@ nav ul li a:hover {
     margin-right: .2rem;
 }
 
+button {
+    background-color: black;
+    border: 0px solid black;
+}
+
 /*       home    */
 .home-page {
     display: flex;
@@ -152,6 +163,7 @@ nav ul li a:hover {
     align-items: start;
     justify-content: space-between;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -212,13 +224,15 @@ h3 {
 
 .about-page {
     width: 100%;
-    margin-top: 2rem;
+    display: flex;
+    place-content: center;
+    margin-top: -6rem;
 }
 
 .about-page-wrapper {
-    width: 80%;
+    width: 90%;
     display: flex;
-    place-items: center;
+   gap: 2rem;
 }
 
 /* left menu */
@@ -227,16 +241,18 @@ h3 {
     font-family: "Changa", sans-serif;
 }
 
+.history-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
 .left-menu {
     width: 30%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-}
-
-.about-profile-image {
-  
+    gap: 2rem;
+    margin-top: 9rem;
 }
 
 .about-info {
@@ -252,8 +268,8 @@ h3 {
 /* right menu */
 .right-menu {
     width: 70%;
-    display: block;
-    gap: 2rem;
+    display: grid;
+  
 }
 
 .a-info-1 {
