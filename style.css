@@ -51,6 +51,7 @@ nav {
 
 h1 {
     color: white;
+    font-size: clamp(1rem, 1.7vw, 2rem);
 
 }
 
@@ -284,5 +285,54 @@ h3 {
 footer {
     background-color: black;
     height: 300px;
-   /*  margin-top: 2rem; */
+   
+}
+
+/* Portfolio */
+
+.portfolio-page {
+    display: flex;
+    place-content: center;
+}
+
+.ff-na {
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.m-fix {
+    margin-bottom: 6rem;
+}
+
+.cd-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin: 2rem;
+    width: 50%;
+}
+
+.gap-set {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.codes {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    letter-spacing: 3px;
+}
+
+.f-h,
+.f-c,
+.f-j,
+.f-s,
+.f-d{
+    scale: 10;
+   
+}
+
+.f-a {
+    display: flex;
+
 }
