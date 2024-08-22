@@ -5,12 +5,13 @@
 .dn {
     display: none;
 }
- .hidden {
-        width: 0;
-        height: 0;
-        overflow: hidden;
-        transition: .6s;
-    }
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: .6s;
+}
 
 
 body {
@@ -155,7 +156,7 @@ button {
 /*       home    */
 .home-page {
     display: flex;
-   margin-block: 4rem;
+    margin-block: 4rem;
     place-content: center;
 }
 
@@ -166,7 +167,7 @@ button {
     align-items: start;
     justify-content: space-between;
     gap: 2rem;
-   
+
 }
 
 
@@ -235,7 +236,7 @@ h3 {
 .about-page-wrapper {
     width: 90%;
     display: flex;
-   gap: 2rem;
+    gap: 2rem;
 }
 
 /* left menu */
@@ -255,7 +256,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 12rem; 
+    margin-top: 12rem;
 }
 
 .about-info {
@@ -272,7 +273,7 @@ h3 {
 .right-menu {
     width: 70%;
     display: grid;
-  
+
 }
 
 .a-info-1 {
@@ -285,15 +286,10 @@ h3 {
 footer {
     background-color: black;
     height: 300px;
-   
+
 }
 
 /* Portfolio */
-
-.portfolio-page {
-    display: flex;
-    place-content: center;
-}
 
 .ff-na {
     font-family: "New Amsterdam", sans-serif;
@@ -308,7 +304,7 @@ footer {
     flex-direction: column;
     gap: 6rem;
     margin: 2rem;
-    width: 50%;
+
 }
 
 .gap-set {
@@ -327,12 +323,32 @@ footer {
 .f-c,
 .f-j,
 .f-s,
-.f-d{
+.f-d {
     scale: 10;
-   
+
 }
 
 .f-a {
     display: flex;
 
+}
+
+/* html */
+
+.html-hr {
+    border: 1px solid rgba(0, 0, 0, 0.067);
+    width: 100%;
+}
+
+.web-site-img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px rgba(68, 68, 68, 0.2);
+}
+
+.port-sites-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
