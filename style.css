@@ -295,12 +295,28 @@ footer {
 
 /* Portfolio */
 
+.h-css-js {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+}
+
+.icon-d-fix {
+    display: grid;
+    gap: 4rem;
+}
+
+.ta {
+    text-align: center;
+    justify-content: space-around;
+}
+
 .ff-na {
     font-family: "New Amsterdam", sans-serif;
 }
 
 .m-fix {
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 }
 
 .cd-container {
@@ -342,6 +358,7 @@ footer {
 .html-hr {
     border: 1px solid rgba(0, 0, 0, 0.067);
     width: 100%;
+    margin-top: -4rem;
 }
 
 .web-site-img {
@@ -358,6 +375,8 @@ footer {
 
 .port-sites-wrapper{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 2rem;
+    place-content: center;
+    
 }

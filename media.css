@@ -100,6 +100,13 @@
     }
 
     /* portfolio */
+
+    .h-css-js {
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+       
+    }
    
 
 }

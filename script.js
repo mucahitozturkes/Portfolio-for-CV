@@ -19,6 +19,19 @@ const aboutPage = document.querySelector(".about-page")
 const portfolioPage = document.querySelector(".portfolio-page")
 const contactPage = document.querySelector(".contact-page")
 
+const images = document.querySelectorAll(".port-sites-wrapper img")
+
+/* animation of image */
+images.forEach(image => {
+    image.addEventListener('mouseenter', () => {
+      image.classList.add('clickShow'); // Fare resmin üzerine geldiğinde .press class'ı eklenir
+    });
+  
+    image.addEventListener('mouseleave', () => {
+      image.classList.remove('clickShow'); // Fare resimden ayrıldığında .press class'ı kaldırılır
+    });
+  });
+
 /* tapGesture */
 tapGesture.addEventListener('click', function () {
     menu.classList.toggle("dg")
@@ -79,5 +92,4 @@ xmark.addEventListener("click", function () {
 image.addEventListener("click", function () {
     profile.classList.toggle("dn")
 });
-
 

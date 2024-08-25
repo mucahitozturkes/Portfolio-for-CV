@@ -41,3 +41,37 @@ transform: rotate(400deg);
 }
 }
  
+.press {
+    animation: squish 1s ease-in-out infinite;
+    transform-origin: bottom; 
+  }
+  
+  @keyframes squish {
+    0%, 100% {
+      transform: scaleY(1); 
+      
+    }
+    50% {
+      transform: scaleY(0.9);
+    }
+  }
+
+  .clickShow {
+    animation: squish .5s ease-in-out infinite;
+    
+  }
+  
+  @keyframes squish {
+    0%, 100% {
+      transform: scale(1); 
+      
+      
+    }
+    50% {
+      transform: scale(1.01);
+     
+    }
+  }
+  
+      
+  
