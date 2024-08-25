@@ -351,6 +351,11 @@ footer {
     box-shadow: 1px 1px 10px rgba(68, 68, 68, 0.2);
 }
 
+.app-img {
+    width: 80%;
+    max-width: 400px;
+}
+
 .port-sites-wrapper{
     display: flex;
     flex-direction: column;
