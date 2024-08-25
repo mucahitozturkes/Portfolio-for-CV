@@ -30,33 +30,18 @@ tapGesture.addEventListener('click', function () {
 
 /* single page */
 home.addEventListener("click", function () {
-    homePage.classList.remove("hidden")
-    aboutPage.classList.add("hidden")
-    portfolioPage.classList.add("hidden")
-    contactPage.classList.add("hidden")
-
     tapGesture.classList.add("dn")
     bars.classList.remove("hidden")
     xmark.classList.add("hidden")
     menu.classList.remove("dg")
 })
 about.addEventListener("click", function () {
-    aboutPage.classList.remove("hidden")
-    homePage.classList.add("hidden")
-    portfolioPage.classList.add("hidden")
-    contactPage.classList.add("hidden")
-
     tapGesture.classList.add("dn")
     bars.classList.remove("hidden")
     xmark.classList.add("hidden")
     menu.classList.remove("dg")
 })
 portfolio.addEventListener("click", function () {
-    portfolioPage.classList.remove("hidden")
-    homePage.classList.add("hidden")
-    aboutPage.classList.add("hidden")
-    contactPage.classList.add("hidden")
-
     tapGesture.classList.add("dn")
     bars.classList.remove("hidden")
     xmark.classList.add("hidden")
@@ -64,11 +49,6 @@ portfolio.addEventListener("click", function () {
 
 })
 contact.addEventListener("click", function () {
-    contactPage.classList.remove("hidden")
-    homePage.classList.add("hidden")
-    aboutPage.classList.add("hidden")
-    portfolioPage.classList.add("hidden")
-
     tapGesture.classList.add("dn")
     bars.classList.remove("hidden")
     xmark.classList.add("hidden")
@@ -99,6 +79,5 @@ xmark.addEventListener("click", function () {
 image.addEventListener("click", function () {
     profile.classList.toggle("dn")
 });
-
 
 
