@@ -197,11 +197,15 @@ h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.letter-s {
+    letter-spacing: 1px;
+}
+
 .profile-explane {
     display: flex;
     flex-direction: column;
     place-content: center;
-    gap: 2rem;
+    gap: 4rem;
     border: 1px solid rgba(0, 0, 0, 0.075);
     border-radius: 21px;
     padding: 2rem;
@@ -302,7 +306,7 @@ footer {
 .cd-container {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 8rem;
     margin: 2rem;
 
 }
