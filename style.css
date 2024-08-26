@@ -82,7 +82,8 @@ a {
     color: white;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+.active {
     border-radius: 5px;
     padding-inline: 2rem;
     padding-block: .5rem;
@@ -298,11 +299,15 @@ footer {
 .h-css-js {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .icon-d-fix {
     display: grid;
     gap: 4rem;
+    max-width: 400px;
+    width: 100%;
+    place-self: center;
 }
 
 .ta {

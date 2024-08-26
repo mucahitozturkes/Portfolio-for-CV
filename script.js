@@ -13,7 +13,7 @@ const home = document.querySelector(".home")
 const about = document.querySelector(".about")
 const portfolio = document.querySelector(".portfolio")
 const contact = document.querySelector(".contact")
-
+/* list menu */
 const homePage = document.querySelector(".home-page")
 const aboutPage = document.querySelector(".about-page")
 const portfolioPage = document.querySelector(".portfolio-page")
@@ -57,6 +57,7 @@ home.addEventListener("click", function () {
     bars.classList.remove("hidden")
     xmark.classList.add("hidden")
     menu.classList.remove("dg")
+    
 })
 about.addEventListener("click", function () {
     tapGesture.classList.add("dn")
