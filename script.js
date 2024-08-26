@@ -20,6 +20,7 @@ const portfolioPage = document.querySelector(".portfolio-page")
 const contactPage = document.querySelector(".contact-page")
 
 const images = document.querySelectorAll(".port-sites-wrapper img")
+const menuTitle = document.querySelectorAll(".list-menu li")
 
 /* animation of image */
 images.forEach(image => {
@@ -31,7 +32,16 @@ images.forEach(image => {
       image.classList.remove('clickShow'); // Fare resimden ayrıldığında .press class'ı kaldırılır
     });
   });
-
+/* list menu */
+menuTitle.forEach(title => {
+    title.addEventListener('mouseenter', () => {
+      title.classList.add('clickMenu'); // Fare resmin üzerine geldiğinde .press class'ı eklenir
+    });
+  
+    title.addEventListener('mouseleave', () => {
+      title.classList.remove('clickMenu'); // Fare resimden ayrıldığında .press class'ı kaldırılır
+    });
+  });
 /* tapGesture */
 tapGesture.addEventListener('click', function () {
     menu.classList.toggle("dg")

@@ -297,8 +297,7 @@ footer {
 
 .h-css-js {
     display: flex;
-    flex-direction: row;
-    place-content: center;
+    flex-wrap: wrap;
 }
 
 .icon-d-fix {

@@ -1,77 +1,108 @@
  .autoShow {
-    animation: autoShowAnimation both;
-    animation-timeline: view(70% 5%);
-}
+     animation: autoShowAnimation both;
+     animation-timeline: view(70% 5%);
+ }
 
-@keyframes autoShowAnimation {
-    from {
-        opacity: 0;
-        transform: translateY(200px) scale(.3);
-    } to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
+ @keyframes autoShowAnimation {
+     from {
+         opacity: 0;
+         transform: translateY(200px) scale(.3);
+     }
 
-.autoRotate {
-    animation: autoRotateAnimation;
-    animation-timeline: view();
-}
+     to {
+         opacity: 1;
+         transform: translateY(0) scale(1);
+     }
+ }
 
-@keyframes autoRotateAnimation {
-    from {
-transform: rotate(0deg);
-    } to {
-transform: rotate(400deg);
-    }
-}
-/*show name*/
-@media (max-width: 1024px) {
-    .showInfo {
-    animation:  autoPopAnimation;
-    animation-timeline: view();
-}
+ .autoRotate {
+     animation: autoRotateAnimation;
+     animation-timeline: view();
+ }
 
-@keyframes autoPopAnimation {
-    from {
-        transform: translateY(250px);
-    } to {
-        transform: translateY(0px);
-    }
-}
-}
- 
-.press {
-    animation: squish 1s ease-in-out infinite;
-    transform-origin: bottom; 
-  }
-  
-  @keyframes squish {
-    0%, 100% {
-      transform: scaleY(1); 
-      
-    }
-    50% {
-      transform: scaleY(0.9);
-    }
-  }
+ @keyframes autoRotateAnimation {
+     from {
+         transform: rotate(0deg);
+     }
 
-  .clickShow {
-    animation: squish .5s ease-in-out infinite;
-    
-  }
-  
-  @keyframes squish {
-    0%, 100% {
-      transform: scale(1); 
-      
-      
-    }
-    50% {
-      transform: scale(1.01);
-     
-    }
-  }
-  
-      
-  
+     to {
+         transform: rotate(400deg);
+     }
+ }
+
+ /*show name*/
+ @media (max-width: 1024px) {
+     .showInfo {
+         animation: autoPopAnimation;
+         animation-timeline: view();
+     }
+
+     @keyframes autoPopAnimation {
+         from {
+             transform: translateY(250px);
+         }
+
+         to {
+             transform: translateY(0px);
+         }
+     }
+ }
+
+ .press {
+     animation: squish 2s ease-in-out infinite;
+     transform-origin: bottom;
+ }
+
+ @keyframes squish {
+
+     0%,
+     100% {
+         transform: scaleY(1);
+
+     }
+
+     50% {
+         transform: scaleY(.9);
+     }
+ }
+
+ .clickShow {
+     animation: squish2 1s ease-in-out infinite;
+
+ }
+
+ @keyframes squish2 {
+
+     0%,
+     100% {
+         transform: scale(1);
+
+
+     }
+
+     50% {
+         transform: scale(.95);
+
+     }
+ }
+
+
+ .clickMenu {
+     animation: squish3 1s ease-in-out infinite;
+    transform-origin: bottom;
+ }
+
+ @keyframes squish3 {
+
+     0%,
+     100% {
+         transform: scaleY(1);
+
+
+     }
+
+     50% {
+         transform: scaleY(.9);
+
+     }
+ }
