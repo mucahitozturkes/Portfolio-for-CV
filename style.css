@@ -300,14 +300,15 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
 .icon-d-fix {
     display: grid;
-    gap: 4rem;
     max-width: 400px;
     width: 100%;
     place-self: center;
+    margin-bottom: 4rem;
 }
 
 .ta {
