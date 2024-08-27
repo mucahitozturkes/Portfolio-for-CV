@@ -41,6 +41,8 @@ nav {
     align-items: center;
     background-color: black;
     width: 100%;
+    z-index: 2;
+
 }
 
 .nav-wrapper {
@@ -48,6 +50,7 @@ nav {
     justify-content: space-between;
     width: 100%;
     padding-inline: 2rem;
+
 }
 
 h1 {
@@ -132,18 +135,30 @@ nav ul li a:hover,
     cursor: pointer;
 }
 
-.fa-square-x-twitter:hover,
-.fa-linkedin:hover {
-    background: blue;
-    border-radius: .5rem;
-    transition: .3s;
+.icon-menu {
+    color: white;
+}
+
+.icon {
+    color: #080808;
+    font-size: 190px;
 }
 
 .fa-youtube:hover {
-    background-color: red;
-    border-radius: 3px;
-    transition: .3s;
+    color: red;
+    transition: color 0.6s ease;
 }
+
+.fa-github:hover {
+    color: purple;
+    transition: color 0.6s ease;
+}
+
+.fa-linkedin:hover {
+    color: blue;
+    transition: color 0.6s ease;
+}
+
 
 .social-hr {
     margin-right: .2rem;
@@ -300,7 +315,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+
 }
 
 .icon-d-fix {
@@ -378,10 +393,44 @@ footer {
     max-width: 400px;
 }
 
-.port-sites-wrapper{
+.port-sites-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     place-content: center;
-    
+
+}
+
+/* contact */
+.cp-wrapper {
+    display: block;
+    place-content: center;
+    margin-block: 10rem;
+    margin-inline: 3.3rem;
+}
+
+.cp-wrapper .social-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    place-self: center;
+    gap: 16rem;
+    justify-content: space-evenly;
+}
+
+.bg-fix {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    scale: 1.5;
+    background-image: url(img/g.png);
+    opacity: 0.03;
+    z-index: 0;
+    rotate: 20deg;
+    cursor: pointer;
+}
+
+.bg-fix:hover {
+   opacity: .06; 
 }
