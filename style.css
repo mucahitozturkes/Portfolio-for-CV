@@ -400,6 +400,9 @@ footer {
     place-content: center;
 
 }
+.image-container {
+  overflow: hidden;
+}
 
 /* contact */
 .cp-wrapper {
@@ -423,15 +426,11 @@ footer {
     right: 0;
     top: 0;
     bottom: 0;
-    scale: 1;
-    background-image: url(img/g.png);
-    background-size: contain;
-    opacity: 0.03;
     z-index: 0;
-    rotate: 20deg;
     cursor: pointer;
 }
 
 .bg-fix:hover {
-    opacity: .06;
+    
+    background-color: rgba(255, 0, 0, 0.306);
 }
