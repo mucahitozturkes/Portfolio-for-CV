@@ -431,6 +431,20 @@ footer {
 }
 
 .bg-fix:hover {
+    opacity: .2;
+   background: linear-gradient(to top, green, yellow);
+}
+
+.text-mail {
+    position: fixed;
     
-    background-color: rgba(255, 0, 0, 0.306);
+    
+}
+.span {
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 5rem;
+    max-width: 100%;
+    letter-spacing: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
