@@ -22,6 +22,7 @@ const contactPage = document.querySelector(".contact-page")
 const images = document.querySelectorAll(".port-sites-wrapper img")
 const menuTitle = document.querySelectorAll(".list-menu li")
 
+
 /* animation of image */
 images.forEach(image => {
     image.addEventListener('mouseenter', () => {

@@ -1,4 +1,4 @@
-@media(max-width: 979px) {
+@media(max-width: 1115px) {
     .hidden {
         width: 0;
         height: 0;
@@ -107,6 +107,39 @@
         transition: 1s;
        
     }
+   
+    /* business */
+    .business-wrapper {
+        gap: 5rem;
+    }
+    .q1 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 1.5rem;
+       
+    }
+    .q2 {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: end;
+        gap: 1.5rem;
+    }
+
+    .q3 {
+        text-align: center;
+    }
+    .t1,
+.t2 {
+    width: 100%;
+
+}
+
+.im1,
+.im2 {
+    width: 100%;
+}
+   
    
 
 }

@@ -125,6 +125,7 @@ nav ul li a:hover,
 .social-wrapper {
     display: flex;
     gap: 1.5rem;
+    align-items: center;
 }
 
 .social-wrapper i {
@@ -168,6 +169,8 @@ button {
     background-color: black;
     border: 0px solid black;
 }
+
+
 
 /*       home    */
 .home-page {
@@ -400,8 +403,9 @@ footer {
     place-content: center;
 
 }
+
 .image-container {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 /* contact */
@@ -432,14 +436,13 @@ footer {
 
 .bg-fix:hover {
     opacity: .2;
-   background: linear-gradient(to top, green, yellow);
+    background: linear-gradient(to top, green, yellow);
 }
 
 .text-mail {
     position: fixed;
-    
-    
 }
+
 .span {
     text-align: center;
     margin-top: 6rem;
@@ -447,4 +450,66 @@ footer {
     max-width: 100%;
     letter-spacing: 1rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*  business */
+.business-page {
+    width: 100%;
+    display: flex;
+    place-content: center;
+}
+
+.business-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 12rem;
+    width: 80%;
+    margin-block: 12rem;
+}
+
+.business-wrapper p {
+    font-size: clamp(1.6rem, 4vw, 9rem);
+    font-family: "Raleway Dots", sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.997);
+
+}
+
+.fake-website {
+    width: 100%;
+    max-width: 375px;
+}
+
+.br {
+    border-radius: 2rem;
+}
+
+.q1,
+.q2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+}
+
+.t1,
+.t2 {
+    width: 50%;
+}
+
+.t2 {
+    text-align: end;
+}
+
+.im1,
+.im2 {
+    width: 50%;
+}
+
+.q3 {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
 }

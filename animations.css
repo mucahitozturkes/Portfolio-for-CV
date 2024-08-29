@@ -50,7 +50,7 @@
 
  .press {
      animation: squish 2s ease-in-out infinite;
-     transform-origin: bottom;
+     transform-origin: top;
  }
 
  @keyframes squish {
@@ -106,3 +106,9 @@
 
      }
  }
+
+
+
+  
+  
+  
