@@ -111,6 +111,7 @@
     /* business */
     .business-wrapper {
         gap: 5rem;
+        margin-top: 4rem;
     }
     .q1 {
         display: flex;
